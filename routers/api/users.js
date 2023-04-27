@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-    const found = users.some(user => used.id === parseInt(req.params.id));
+    const found = users.some(user => user.id === parseInt(req.params.id));
 
     if (found) {
         const updateUser = req.body;
